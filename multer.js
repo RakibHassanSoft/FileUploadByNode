@@ -5,7 +5,7 @@ const fs = require('fs');
 // Ensure the uploads directory exists
 function ensureUploadDirectory() {
   const uploadPath = path.join(__dirname, 'uploads'); // file location
-  // Here create new file
+  // Here create new folder is that is not there 
   if (!fs.existsSync(uploadPath)) {
     fs.mkdirSync(uploadPath); 
   }
